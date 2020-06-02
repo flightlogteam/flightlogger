@@ -47,7 +47,7 @@ database:
 5. `go run main.go`
 
 # Contributions
-All help is appreciated. Send me an email if you wonder how you can contribute or just make a PR. 
+All help is appreciated. Send me an email if you wonder how you can contribute or just make a PR. All contributors will be given access to a full JetBrains-software-package and will be given out to anyone who proves themselves by contributing.
 
 ## Guidelines
 - Ensure that the API is easy to use. Please reed [this guide](https://blog.florimond.dev/restful-api-design-13-best-practices-to-make-your-users-happy)
@@ -60,3 +60,6 @@ All help is appreciated. Send me an email if you wonder how you can contribute o
 
 # Authorization
 Flightlogger uses **A**ttribute-**B**ased-**A**ccess-**C**ontrol to control access to resources. Resources are defined in the database.
+
+## Goals for access-control
+The main goals is to ensure that we can get a hierarchy of access and allowing users to state if they want their information to be public or not, and the possibility to allow certain users to access a profile; what we have learned to expect from social media. Access-control should also be efficient and casbin rules should be kept to a minimum. 
