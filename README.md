@@ -17,12 +17,11 @@ Here we use a layered model in order to ensure security. The backend API will ba
 ## Dependencies
 * golang
 * git
-* **[dep](https://github.com/golang/dep)** (golang package manager)
 
 Please also set the GOHOME environment variable should be $HOME/go
 
 ## Project setup
-1. `go get github.com/klyngen/flightlogger` followed by `dep ensure`. 
+1. `go get github.com/klyngen/flightlogger`. 
 2. Generate certificates 
 ```bash
 openssl genrsa -out fly.rsa 2048
